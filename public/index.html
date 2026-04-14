@@ -7,6 +7,9 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
   <!-- Schrift -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -22,195 +25,231 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#">
-
-  <!-- LOGO -->
-  <div class="logo-box">
-    <div class="square outer">
-      <div class="square middle">
-        <div class="square inner"></div>
+ 
+      <!-- LOGO -->
+      <div class="logo-box">
+        <div class="square outer">
+          <div class="square middle">
+            <div class="square inner"></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <h1><span class="ms-3">
-     <span class="purple"> Pick</span> <span class="white">and</span> <span class="blue">Look</span>
-  </span></h1>
-  </a>
-
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    <span class="menu-text">Menü</span>
+ 
+      <span class="brand-text ms-3">
+        <span class="purple">Pick</span> <span class="white">and</span> <span class="blue">Look</span>
+      </span>
+    </a>
+ 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-
+ 
     <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto align-items-center">
         <li class="nav-item">
-          <a class="nav-link" href="#">Startseite</a></li>
+          <a class="nav-link" href="#">Startseite</a>
+        </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Entdecken</a></li>
+          <a class="nav-link" href="#">Entdecken</a>
+        </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a></li>
-        <li class="nav-item">
-          <a class="btn btn-primary ms-3" href="#">Registrieren</a>
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="btn btn-primary" href="#">Registrieren</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
  
-
+ 
 <!-- HERO -->
-<section class="top py-5">
-  <div class = "container">
-  <div class="row align-items-center">
-
-    <!-- TEXT -->
-    <div class="col-md-6">
-      <h1>Dein perfekter <br>Film.<br>
-        <span class="purple">Jede Nacht.</span><br>
-        <span class="blue">Jede <br>Stimmung.</span>
-      </h1>
-
-      <p class="subtitle">Weniger suchen. Mehr genießen</p>
-
-      <p class="description">
-        Pick and Look analysiert deine Interessen und liefert dir personalisierte Film- und Serienempfehlungen - unabhängig davon, auf welcher Streaming-Platform sie verfügbar sind.
-      </p>
-
-      <button class="btn btn-primary me-2">Jetzt kostenlos starten</button>
-      <button class="btn btn-outline-light">Mehr erfahren</button>
-    </div>
-
-    <!-- EMPFEHLUNGEN -->
-    <div class="col-md-6">
-      <div class="recommend-box">
-        <h5>Empfohlen für dich</h5>
-        
-        <div class="movie-card">
-
-        <div class="play-badge purple">
-          <div class="play-triangle"></div>
-        </div>
-
-        <div class="movie-text">
-          <p class="movie-title">Inception</p>
-          <p class="movie-info">Sci · 2010</p>
-          <span class="match-badge">98% Treffer</span>
-        </div>
-
-        </div>
-      
-        <div class="movie-card">
-
-          <div class="play-badge yellow">
-          <div class="play-triangle"></div>
-          </div>
-
-          <div class="movie-text">
-          <p class="movie-title">Interstellar</p>
-          <p class="movie-info">Drame · 2014</p>
-          <span class="match-badge">95% Treffer</span>
-          </div>
-
-        </div>
-
-        <div class="movie-card">
-
-        <div class="play-badge blue">
-          <div class="play-triangle"></div>
-        </div>
-
-        <div class="movie-text">
-          <p class="movie-title">Dark Knight</p>
-          <p class="movie-info">Action · 2008</p>
-          <span class="match-badge">92% Treffer</span>
-        </div>
-        </div>
+<section class="hero-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+ 
+      <!-- TEXT -->
+      <div class="col-lg-6">
+        <h1>Dein perfekter <br>Film.<br>
+          <span class="purple">Jede Nacht.</span><br>
+          <span class="blue">Jede<br>Stimmung.</span>
+        </h1>
+ 
+        <p class="subtitle mt-3">Weniger suchen. Mehr genießen</p>
+ 
+        <p class="description mt-3">
+          Pick and Look analysiert deine Interessen und liefert dir personalisierte Film- und Serienempfehlungen – unabhängig davon, auf welcher Streaming-Platform sie verfügbar sind.
+        </p>
+ 
+        <div class="mt-4 d-flex gap-3 flex-wrap">
+          <button class="btn btn-primary">Jetzt kostenlos starten</button>
+          <button class="btn btn-outline-light">Mehr Erfahren</button>
         </div>
       </div>
+ 
+      <!-- EMPFEHLUNGEN -->
+      <div class="col-lg-6">
+        <div class="recommend-box">
+          <h5>Empfohlen für dich</h5>
+ 
+          <div class="movie-card">
+            <div class="play-badge play-purple">
+              <div class="play-triangle"></div>
+            </div>
+            <div class="movie-text">
+              <p class="movie-title">Inception</p>
+              <p class="movie-info">Sci · 2010</p>
+              <span class="match-badge">98% Treffer</span>
+            </div>
+          </div>
+ 
+          <div class="movie-card">
+            <div class="play-badge play-teal">
+              <div class="play-triangle"></div>
+            </div>
+            <div class="movie-text">
+              <p class="movie-title">Interstellar</p>
+              <p class="movie-info">Drama · 2014</p>
+              <span class="match-badge">95% Treffer</span>
+            </div>
+          </div>
+ 
+          <div class="movie-card">
+            <div class="play-badge play-gold">
+              <div class="play-triangle"></div>
+            </div>
+            <div class="movie-text">
+              <p class="movie-title">Dark Knight</p>
+              <p class="movie-info">Action · 2008</p>
+              <span class="match-badge">92% Treffer</span>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+ 
     </div>
-
   </div>
 </section>
-
-
+ 
+ 
 <!-- FEATURES -->
-<section class="container text-center mt-5">
-  <h2><span class="white">Was Pick and Look </span><span class="purple">besonders</span> <span class="white">macht</span></h2>
-  <p class="body-text">Nicht nur eine weitere Empfehlungs-App - ein intelligenter Filmbegleiter</p>
-
-  <div class="row mt-4">
-
-    <div class="col-md-4">
-      <div class="feature-card">
-        <div class="feature-titel">Empfehlungen </div>
-        <p class="feature-info">Basierend auf deinen Interessen und Bewertungen schlägt Pick and Lock Inhalte vor, die wirklich zu dir passen</p>
+<section class="features-section py-5">
+  <div class="container text-center">
+    <h2>
+      <span class="white">Was Pick and Look </span><span class="purple">besonders</span><span class="white"> macht</span>
+    </h2>
+    <p class="body-text mt-2">Nicht nur eine weitere Empfehlungs-App – ein intelligenter Filmbegleiter</p>
+ 
+    <div class="row mt-4 g-4">
+ 
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-check-circle-fill"></i>
+          </div>
+          <div class="feature-titel">Personalisierte Empfehlungen</div>
+          <p class="feature-info">Basierend auf deinen Interessen und Bewertungen schlägt Pick and Look Inhalte vor, die wirklich zu dir passen</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="feature-card">
-        <div class="feature-titel">Smarte Filterung</div>
-        <p class="feature-info">Filtere nach Genre, Stimmung, Erscheinungsjahr oder Bewerung und finde genau das, wonach du suchst</p>
+ 
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-grid-fill"></i>
+          </div>
+          <div class="feature-titel">Smarte Filterung</div>
+          <p class="feature-info">Filtere nach Genre, Stimmung, Erscheinungsjahr oder Bewertung und finde genau das, wonach du suchst</p>
+        </div>
       </div>
-      
-    </div>
-    <div class="col-md-4">
-      <div class="feature-card">
-        <div class="feature-titel">Persönliche Merkliste</div>
-        <p class="feature-info">Speichere interessante Filme und Serien auf deiner Merkliste und behalte immer den Überblick über deine Wunschliste </p>
+ 
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <div class="feature-titel">Persönliche Merkliste</div>
+          <p class="feature-info">Speichere interessante Filme und Serien auf deiner Merkliste und behalte immer den Überblick über deine Wunschliste</p>
+        </div>
       </div>
+ 
     </div>
   </div>
 </section>
-
-
+ 
+ 
 <!-- STEPS -->
-<section class="container text-center mt-5">
-  <h2><span class="white">So funktioniert </span><span class="purple">Pick and Look</span></h2>
-  <p class="body-text">In drei einfachen schritten zu deinem nächsten Lieblingsfilm.</p>
-
-  <div class="row mt-4">
-
-    <div class="col-md-4">
-      <div class="step-one">1</div>
-      <div class="movie-title">Interessen auswählen</div>
-      <p class="body-text">Wähle deine Lieblingsgenre, Stimmungen und Themen aus - Pick und Look lernt deine Vorlieben kennen.</p>
+<section class="steps-section py-5">
+  <div class="container text-center">
+    <h2>
+      <span class="white">So funktioniert </span><span class="purple">Pick and Look</span>
+    </h2>
+    <p class="body-text mt-2">In drei einfachen Schritten zu deinem nächsten Lieblingsfilm.</p>
+ 
+    <div class="row mt-5 g-4">
+ 
+      <div class="col-md-4">
+        <div class="step-circle step-purple">1</div>
+        <p class="step-title mt-3">Interessen auswählen</p>
+        <p class="body-text">Wähle deine Lieblingsgenre, Stimmungen und Themen aus – Pick and Look lernt deine Vorlieben kennen.</p>
+      </div>
+ 
+      <div class="col-md-4">
+        <div class="step-circle step-purple-mid">2</div>
+        <p class="step-title mt-3">Empfehlungen erhalten</p>
+        <p class="body-text">Unser System analysiert deine Präferenzen und zeigt dir passende Filme und Serien von allen Plattformen.</p>
+      </div>
+ 
+      <div class="col-md-4">
+        <div class="step-circle step-teal">3</div>
+        <p class="step-title mt-3">Film genießen</p>
+        <p class="body-text">Klicke auf deinen Wunschfilm und starte direkt auf der richtigen Plattform – ohne langes Suchen</p>
+      </div>
+ 
     </div>
-
-    <div class="col-md-4">
-      <div class="step-two">2</div>
-      <div class="movie-title">Empfehlungen erhalten</div>
-      <p class="body-text">Unser System analysiert deine Präferenzen und zeigt dir passende Filme und Serien von allen Plattformen.</p>
-    </div>
-
-    <div class="col-md-4">
-      <div class="step-three">3</div>
-      <div class="movie-title">Film genießen</div>
-      <p class="body-text">Klicke auf deinen Wunschfilm und starte direkt auf der richtigen Plattform - ohne langes Suchen</p>
-    </div>
-
   </div>
 </section>
-
-<!-- CallToAction-->
+ 
+ 
+<!-- CALL TO ACTION -->
 <section class="cta-section text-center">
   <div class="container">
-
-    <h2><span class="white">Bereit für dein nächstes<br>Filmerlebnis?</span></h2>
-    <p class="movie-title">Kostenlos registrieren. Kein Abo nötig. Sofort loslegen</p>
-
-    <button class="btn btn-primary me-2">Jetzt kostenlos starten</button>
-    <button class="btn btn-outline-light">Mehr erfahren</button>
-
+    <h2 class="white">Bereit für dein nächstes<br>Filmerlebnis?</h2>
+    <p class="cta-sub mt-2">Kostenlos registrieren. Kein Abo nötig. Sofort loslegen</p>
+    <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+      <button class="btn btn-cta-outline">Jetzt kostenlos Starten</button>
+      <button class="btn btn-cta-ghost">Mehr erfahren</button>
+    </div>
   </div>
 </section>
-
+ 
+ 
+<!-- SLOGAN -->
+<div class="slogan-bar">
+  <p>Pick whats fits. Look what`s next.</p>
+</div>
+ 
 <!-- FOOTER -->
-<footer class="container mt-5 text-center">
-  <p><span class="purple">Pick</span><span class="width">and</span><span class="blue">Look</span></p>
-  <p>Impressum Datenschutz Kontakt ©2026 Pick and Look</p>
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-inner">
+ 
+      <div class="footer-brand">
+        <span class="purple">Pick</span><span class="white"> and </span><span class="blue">Look</span>
+      </div>
+ 
+      <div class="footer-links">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">Kontakt</a>
+      </div>
+ 
+      <div class="footer-copy">©2026 Pick and Look</div>
+ 
+    </div>
+  </div>
 </footer>
-
+ 
 </body>
 </html>
